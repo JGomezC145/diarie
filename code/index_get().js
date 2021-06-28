@@ -1,4 +1,4 @@
-//moment.js config
+//moment.js config Producto
 moment.updateLocale('es', {
     relativeTime : {
         future: "En %s",
@@ -97,7 +97,7 @@ function edit(code) {
 /* dev */
 function cds(code, visible = true) {
     if (visible == true) {
-        db.collection("ProductosData").doc(code).set({
+        db.collection(firestoredb).doc(code).set({
             visible: true,
         },  { merge: true })
         .then(() => {
@@ -107,7 +107,7 @@ function cds(code, visible = true) {
             console.error("Error writing document: ", error);
         });
     } else if (visible == false) {
-        db.collection("ProductosData").doc(code).set({
+        db.collection(firestoredb).doc(code).set({
             visible: false,
         },  { merge: true })
         .then(() => {

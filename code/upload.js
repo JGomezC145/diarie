@@ -1,4 +1,4 @@
-//consts
+//consts 
 const input = document.querySelector('#imagepicker');
 const inputv = document.querySelector('#videopicker');
 var vidd;

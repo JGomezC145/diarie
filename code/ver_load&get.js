@@ -9,7 +9,7 @@ function system() {
     } else {
         if (hash === "" || hash === null) {
             tries = tries + 1;
-            var newhash = prompt("Ingresa el codigo del producto")
+            var newhash = prompt("Ingresa el codigo del item")
             window.location.hash = newhash;
             system()
         } else {
@@ -90,7 +90,7 @@ window.addEventListener('keyup', function(e){
         window.location = 'upload.html'
 
     } else if (kcode === 115) {
-        var newhash = prompt("Ingresa el codigo del producto")
+        var newhash = prompt("Ingresa el codigo del item")
         window.location.hash = newhash;
     } else {
 
